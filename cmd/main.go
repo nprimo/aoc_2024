@@ -7,6 +7,7 @@ import (
 	"github.com/nprimo/aoc_2024/inputs"
 	"github.com/nprimo/aoc_2024/internal/day1"
 	"github.com/nprimo/aoc_2024/internal/day2"
+	"github.com/nprimo/aoc_2024/internal/day3"
 )
 
 type solutions func(string) int
@@ -14,6 +15,7 @@ type solutions func(string) int
 var AocSolutions = map[string][]solutions{
 	"day1": {day1.Solve1, day1.Solve2},
 	"day2": {day2.Solve1, day2.Solve2},
+	"day3": {day3.Solve1, day3.Solve2},
 }
 
 func main() {
