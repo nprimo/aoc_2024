@@ -10,6 +10,7 @@ import (
 	"github.com/nprimo/aoc_2024/internal/day3"
 	"github.com/nprimo/aoc_2024/internal/day4"
 	"github.com/nprimo/aoc_2024/internal/day5"
+	"github.com/nprimo/aoc_2024/internal/day6"
 	"github.com/nprimo/aoc_2024/internal/day7"
 )
 
@@ -21,6 +22,7 @@ var AocSolutions = map[string][]solutions{
 	"day3": {day3.Solve1, day3.Solve2},
 	"day4": {day4.Solve1},
 	"day5": {day5.Solve1},
+	"day6": {day6.Solve1},
 	"day7": {day7.Solve1, day7.Solve2},
 }
 
