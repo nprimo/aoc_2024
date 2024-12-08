@@ -37,7 +37,6 @@ func isSafeLevel(values []string) bool {
 	return true
 }
 
-// INFO: does not work
 func Solve2(input string) int {
 	levels := strings.Split(input, "\n")
 	safeLevelCount := 0
@@ -46,9 +45,18 @@ func Solve2(input string) int {
 		if len(parsed) < 2 {
 			continue
 		}
-		if isSafeLevel(parsed[1:]) ||
-			isSafeLevelWithException(parsed, 0) {
+		if isSafeLevel(parsed) {
 			safeLevelCount++
+			continue
+		}
+		for i := 0; i < len(parsed); i++ {
+			modified := make([]string, len(parsed))
+			copy(modified, parsed)
+			modified = append(modified[:i], modified[i+1:]...)
+			if isSafeLevel(modified) {
+				safeLevelCount++
+				break
+			}
 		}
 	}
 	return safeLevelCount
