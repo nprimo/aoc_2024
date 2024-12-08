@@ -25,7 +25,7 @@ var AocSolutions = map[string][]solutions{
 	"day5": {day5.Solve1},
 	"day6": {day6.Solve1},
 	"day7": {day7.Solve1, day7.Solve2},
-	"day8": {day8.Solve1},
+	"day8": {day8.Solve1, day8.Solve2},
 }
 
 func main() {
