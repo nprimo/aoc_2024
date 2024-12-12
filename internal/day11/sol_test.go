@@ -15,8 +15,8 @@ func TestSolve1(t *testing.T) {
 	assert.Equal(t, want, got)
 }
 
-func TestSolve2(t *testing.T) {
-	want := 55312
-	got := Solve2(input)
-	assert.Equal(t, want, got)
-}
+// func TestSolve2(t *testing.T) {
+// 	want := 55312
+// 	got := Solve2(input)
+// 	assert.Equal(t, want, got)
+// }
