@@ -10,6 +10,7 @@ import (
 	"github.com/nprimo/aoc_2024/internal/day11"
 	"github.com/nprimo/aoc_2024/internal/day12"
 	"github.com/nprimo/aoc_2024/internal/day13"
+	"github.com/nprimo/aoc_2024/internal/day14"
 	"github.com/nprimo/aoc_2024/internal/day2"
 	"github.com/nprimo/aoc_2024/internal/day3"
 	"github.com/nprimo/aoc_2024/internal/day4"
@@ -36,6 +37,7 @@ var AocSolutions = map[string][]solutions{
 	"day11": {day11.Solve1, day11.Solve2},
 	"day12": {day12.Solve1},
 	"day13": {day13.Solve1, day13.Solve2},
+	"day14": {day14.Solve1},
 }
 
 func main() {

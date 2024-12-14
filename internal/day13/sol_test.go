@@ -36,19 +36,19 @@ func TestSolve2(t *testing.T) {
 func TestGetButton(t *testing.T) {
 	testCases := []struct {
 		instructions string
-		want         [2]int
+		want         [2]int64
 	}{
-
-		{`Button A: X+94, Y+34
+		{
+			`Button A: X+94, Y+34
 Button B: X+22, Y+67
 Prize: X=8400, Y=5400`,
-			[2]int{80, 40},
+			[2]int64{80, 40},
 		},
 		{
 			`Button A: X+26, Y+66
 Button B: X+67, Y+21
 Prize: X=12748, Y=12176`,
-			[2]int{},
+			[2]int64{},
 		},
 	}
 
